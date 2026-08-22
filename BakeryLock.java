@@ -51,6 +51,6 @@ public class BakeryLock implements Lock
     @Override
     public void unlock(int threadId) 
     {
-        //hey babygirl
+        flag[threadId].value = false;
     }
 }

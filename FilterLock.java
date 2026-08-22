@@ -51,6 +51,6 @@ public class FilterLock implements Lock
     @Override
     public void unlock(int threadId) 
     {
-        
+        level[threadId].value = 0;
     }
 }
