@@ -22,7 +22,7 @@ public class FilterLock implements Lock
     @Override
     public void lock(int threadId) 
     {
-        for(int i = 1; i < n; i++){
+        for(int i = 0; i < n; i++){
 
             level[threadId].value = i;
 
